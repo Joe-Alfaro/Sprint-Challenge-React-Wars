@@ -1,7 +1,13 @@
 import React from 'react';
 
 const CharacterList = props => {
-  return <h2>Luke Skywalker</h2>;
+  return (
+    <div className="character-list">
+      {props.starwarsChars.map(character =>(
+        <h2>{character.name}</h2>
+      ))}
+   </div>
+  );
 }
 
 export default CharacterList;
